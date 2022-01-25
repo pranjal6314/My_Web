@@ -1,0 +1,22 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include  ../static/style.css
+  body
+    nav#navbar 
+        ul 
+            li #[a(href="/") Home ]
+            li #[a(href="/") Contact ]
+            li #[a(href="/") About ]
+            li #[a(href="/") Service]
+    section#intro 
+        |Weclome to Pranjal's Dance Academy 
+    section#sponsor 
+        | Sponsor 
+    footer#footer 
+        | this is a footer
+
+    script
+      include ../static/index.js
