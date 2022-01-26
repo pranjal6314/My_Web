@@ -13,7 +13,10 @@ app.set('views',path.join(__dirname,'views'));//set the view directory
 app.get('/',(req,res)=>{
     const con='this is a Dance web site';
     const params={'title':'Dance WebSite','contant':con};
-    res.status(200).render('index.pug',params);
+    res.status(200).render('index.pug');
+})
+app.get('/contact',(req,res)=>{
+    res.status(200).render('contact.pug');
 })
 app.listen(port,()=>{
     console.log('live');
