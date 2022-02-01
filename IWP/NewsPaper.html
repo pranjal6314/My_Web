@@ -4,11 +4,23 @@
 <head>
     <title>News Paper</title>
     <style>
+        body {
+            border: 6px solid black;
+            border-radius: 6px;
+            background: #e8e8e8;
+            text-decoration: none;
+        }
+        .gif{
+            height: 200px;
+        }
+
         h1 {
             text-align: center;
             font-weight: bolder;
+            margin-left: 30px;
         }
-        h2{
+
+        h2 {
             text-align: center;
         }
 
@@ -43,19 +55,19 @@
             margin-top: 8px;
             margin-right: 16px;
             font-size: 17px;
+            justify-content: center;
+            align-items: center;
         }
-        
-        img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .headline {
-            width: 100%;
-            height: 200px;
-          
-           
-        }
+
+       
+.name{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+font-weight: 400 bolder;
+font-size: larger;
+}
+
         h3 {
             color: #262626;
             font-size: 17px;
@@ -63,6 +75,7 @@
             font-weight: 700;
             margin-bottom: 4px;
         }
+
         p {
             font-size: 17px;
             font-weight: 400;
@@ -74,24 +87,45 @@
             font-size: 14px;
         }
 
-        .card1 {
-            display: block;
-            position: relative;
-          
-            background-color: #d7f5fa;
-            border-radius: 4px;
-            padding: 32px 24px;
-            margin: 12px; 
-            text-decoration: none;
-            z-index: 0;
-            overflow: hidden;
+        .card {
+            height: 180px;
+            padding: 13px;
+            width: 27%;
+            padding-top: 10px;
+            margin: 23px 22px;
+            display: inline-block;
+            border-radius: 30px;
+            background: #e0e0e0;
+            box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+
         }
 
+        /*  */
+        .card-box {
+            display: flex;
+
+            align-items: center;
+        }
+
+
+        iframe {
+            margin: 23px 22px;
+        }
+
+        p:hover {
+            color: black;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 
 <body>
-    <img src="download.png" alt="news">
+    <div class="gif">
+        <div class="name">
+        <h1>VIT NEWS</h1>
+        <iframe src="https://giphy.com/embed/n2IPMYMthV0m4" frameborder="0"></iframe></div>
+    </div>
     <nav class="navMenu">
         <ul>
             <li><a class="active" href="#home">Home</a></li>
@@ -105,15 +139,33 @@
         HeadLine
     </h2>
     <div class="headline">
-        <a class="card1" href="#">
-            <h3>Corona</h3>
-            <p class="small">Card description with lots of great facts and interesting details.</p>
 
-        </a>
-          </div>
+        <div class="card">
+            <div class="card-box">
+                <p class="zoom">Ukraine crisis: Biden warns Russia may invade next month
+                    <br>
+                    <br>
+                    <a href="https://www.bbc.com/news/world-europe-60164537" target="_blank">link</a>
+                 </p>
+                 
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-box">
+                <p>orem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, magni. Beatae aliquid officia
+                    provident veritatis vel at consequatur, labore tenetur.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-box">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis expedita illo, deleniti impedit
+                    ipsam
+                    totam iusto amet facilis sapiente a?</p>
+            </div>
+        </div>
     </div>
 
-    <iframe src="https://www.youtube.com/embed/5ujixdb9SJA" frameborder="0"></iframe>
+    <iframe margin: 23px 22px; src="https://www.youtube.com/embed/5ujixdb9SJA" frameborder="0"></iframe>
 </body>
 
 </html>
