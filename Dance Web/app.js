@@ -1,3 +1,4 @@
+//first run mongod in terminal 
 const express=require("Express");
 const path =require("path");
 const fs=require("fs");
