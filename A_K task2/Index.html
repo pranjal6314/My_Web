@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Team</a></li>
+                </ul>
+
+            </header>
+        <section class="banner">
+            <div class="first">
+                <div class="first1 firstchild">
+                    <div class="txt">
+                        <h2>Anyone can learn cyber security with TryHackMe</h2>
+                        <p>Hands-on cyber security training through real-world scenarios</p>
+                    </div>
+                    <div class="mail">
+                        <input id="jumbo-mail"  class=" mail" type="email" placeholder=" Email">
+                        <button type="submit" onclick="signin()" class="btn">Join for FREE</button>
+                    </div>
+                </div>
+                <div class="first2 firstchild">
+                    <img class="roc" src="./rocketman-removebg-preview.png" alt="">
+                </div>
+            </div>
+    
+        </section>
+
+        
+       
+    <div class="second">
+        <div class="second1">
+                <div class="sof">
+                    <img style="width: 230px;" src="./software-removebg-preview.png" alt="">
+
+                </div>
+                <div class="txt2">
+                    <h3><i>Byte-</i>sized gamified lessons</h3>
+                    <div class="titleunderline"></div>
+                    <p>Learning cyber security on TryHackMe is fun and addictive. Earn points by answering questions, taking on challenges and maintain your hacking streak through short lessons. </p>
+                </div>
+        </div>
+        <div class="second2">
+                <div class="txt3">
+                    <h3>Learn and Practice</h3>
+                    <p>Learn by following a structured paths and reinforce your skills in a real-world environment by completing guided, objective-based tasks and challenges.</p>
+
+                </div>
+                <div class="card" id="paths">
+                    <div class="card1">
+                        <img src="./card1.jpg" alt="">
+                        <!-- <h4>Cyber Security</h4>
+                        <p>Learn how to protect your computer and network from cyber attacks</p> -->
+                    </div>
+                    <div class="card2">
+                        <img src="./card2.png" alt="">
+                        <!-- <h4>Cyber Security</h4>
+                        <p>Learn how to protect your computer and network from cyber attacks</p> -->
+                    </div>
+                    <div class="card3">
+                        <img src="./card3.png" alt="">
+                        <!-- <h4>Cyber Security</h4>
+                        <p>Learn how to protect your computer and network from cyber attacks</p> -->
+                    </div>
+                </div>
+        </div>
+        <div class="second3 box">
+            <div class="txt4">
+            <h3 class="hand">Hands-on hacking for all skill levels</h3>
+            <p class="hand1">Learn cyber security with fun gamified labs and challenges</p>
+            </div>
+            <br>
+        </div>
+
+        <div class="communtiy">
+            <div class="txt4">
+                <h3 class="hand">community</h3>
+                <div class="titleunderline"></div>
+                <p class="hand1">Connect with other like-minded cyber security students and join our huge community. Ask questions, share knowledge and meet people on the same journey as you.</p>
+
+            </div>
+            <div class="users text-center">
+                <div class="stat-circle">
+                    <span id="usercount">1m</span>
+                    </div>
+
+                    <h5 class="mb">Registered Users</h5>
+            </div>
+        </div>
+
+        <div class="second4 tweet">
+            <img class="tweet1" src="./tweet.png" alt="">
+        </div>
+    </div>
+
+
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky",window.scrollY>0);
+            })
+        </script>
+</body>
+</html>
