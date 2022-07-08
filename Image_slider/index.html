@@ -27,7 +27,33 @@
                     <img src="https://wallpapers.com/images/high/dragon-ball-super-goku-kbejdsutbmi0jhk5.jpg" alt="" /></div>
                 <div class="slides">
                     <img src="https://wallpapers.com/images/high/dragon-ball-super-goku-3ck0f1i5omnszk7b.jpg" alt="" /></div>
+           
+            </div>
+             <div class="comparison">
+            <h2>Pranjal</h2>
+            <div class="wrapper">
+                <div class="images">
+                    <div class="img1"></div>
+                    <div class="img2"></div>
+                </div>
+                <div class="slider12">
+                    <div class="drag-line">
+                        <span></span>
+                    </div>
+                    <input type="range" min="0" max="100" value="50">
+                </div>
             </div>
         </div>
+         <script>
+            const slider12=document.querySelector(".slider12 input");
+            const img=document.querySelector(".images .img2");
+            const dragLine=document.querySelector(".slider12 .drag-line")
+            slider12.oninput=()=>{
+                let sliderVal=slider12.value;
+                dragLine.style.left=sliderVal+"%";
+                img.style.width=sliderVal+"%";
+
+            }
+        </script>
     </body>
 </html>
