@@ -1,0 +1,128 @@
+:root{
+    --primary-color:#031a30;
+    --fontColor:white;
+    --bluev:#166bcc;
+    --primary-font-color: #00eaff;
+    --primaryHover: hsl(185, 92%, 41%);
+    --secondary: rgb(150, 162, 188);
+    --paragraphColor: rgb(127, 127, 175);
+    --textColor: #dae4fb;
+    --headerHeight: 3rem;
+    --formColor: #04213d;
+    --projectCardColor: #072340;
+}
+
+
+@media only screen and (max-width:800px)
+{
+	.nav-container .logo{
+		display:none;
+	}
+	.navIcon
+	{
+		position:fixed;
+		top:-400%;
+		background:var(--formColor);
+		border:2px solid var(--primary-font-color);
+		border-radius:6px 6px 6px 6px;
+		width: 60vw;
+		display:flex;
+		flex-direction:column;
+		margin:auto;
+		justify-content:center;
+		align-items:center;
+		z-index:2;
+
+	}
+	.navIcon ol
+	{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		list-style:none;
+		width:30vh;
+		color:var(--primary-font-color);
+	}
+	.navIcon ol li a
+	{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		text-align:center;
+		
+	}
+	.nav-container .burger
+	{
+		visibility: visible;
+	}
+	.navIcon .cross
+	{
+		position: absolute;
+	    left: 25px;
+	    top: 13px;
+		visibility: visible;
+		cursor: pointer;
+	}
+    .add-resp{
+		position: fixed;
+		top:10%;
+	}
+	.add-resp-cross{
+		position: fixed;
+		top:-400%;
+	}
+	/* About me section	 */
+	.aboutme{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Skill section	 */
+    .skill-div-top{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	/* 	project section */
+	.box{
+		width: 65vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.box .innner-bx{
+		margin: 12px 0px;
+		width: 60vw;
+	}
+	.box .innner-bx .in-bx-top{
+		width: 58vw;
+	}
+	.box .innner-bx .in-bx-mid {
+		width: 50vw;
+	}
+	.box .innner-bx .in-bx-mid img{
+		width: 30vw;
+	}
+	.box .innner-bx .in-bx-about{
+		width: 50vw;
+	}
+	/* contact-box	 */
+	.main-contact-box{
+		width: 65vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.main-contact-box .contact-left-box{
+		width: 60vw;
+	}
+	.main-contact-box .contact-right-box{
+		width: 60vw;
+	}
+}
+/* Media Queury css End here */
