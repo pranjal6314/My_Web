@@ -193,6 +193,9 @@ header{
     gap: 20px; max-width: 30%;
     margin: 15px;
 }
+.feature-card img{
+    width: 60px;
+}
 .features-area{
     justify-content: space-between;
     margin-top: 10px;
@@ -282,10 +285,38 @@ header{
 
 /* cta section */
 .cta-section{
- padding: 80px var(--padding-inline-section) 0;
+ padding: 80px var(--padding-inline-section) 60px;
 }
 .cta-section-container{
     flex-direction: column;
     gap: 30px;
     
+}
+
+
+
+/* footer */
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+.link-column{
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footer-container{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* sub-footer */
+.subfooter{
+    background-color: #b9cde4   ;
+    padding: var(--padding-inline-section);
+}
+.subfooter-container{
+    gap: 30px;  
+    justify-content: center;  
 }
